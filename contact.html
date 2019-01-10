@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+      <style> 
+     body {
+
+background-image: url("img/bg.jpg");
+
+}
+
+img {
+
+margin:1em;
+padding-right: 1em;
+
+}
+.contact-form{
+			
+			margin-top: 100px;
+			padding: 20px;
+			box-shadow: 0px 0px 10px 3px grey;
+     
+}
+
+    .container {
+      display:grid;
+grid-template-columns: 50% 50%;
+      background-color: rgb(255, 250, 245);
+      padding: 2em;
+      margin: 2em;
+    }
+    .container2 {
+      display:flex;
+
+    }
+
+          </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <title>The kitsch bitch Antwerp</title>
+  </head>
+  <body>
+        <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="index.html">The kitsch bitch</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="menu.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="pictures.html">Pictures</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="pictures.html">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Locations
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="antwerp.html">Antwerp</a>
+                                  <a class="dropdown-item" href="brussels.html">Brussels</a>
+                                  <a class="dropdown-item" href="gent.html">Gent</a>
+                              </div>
+                            </li>
+                          </ul></div></nav>
+                    
+                
+             </header>
+
+
+             <main> 
+              <form action="mailto:veronique.intven@gmail.com" method="post" enctype="text/plain">
+                <div class="container contact-form">
+                    <h1>Contact us</h1>
+                    <hr>
+                  
+                    <div class="row">
+                     
+                         <div class="col-md-6">
+                            <img src="img/constipation.jpg" alt="constipation" height="500" >
+                         </div>
+                  
+                         <div class="col-md-6">
+                           
+                           <div class="form-group">
+                              <label for="form_name">Firstname *</label>
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                           <div class="form-group">
+                              <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form_need">Please specify your need *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                   
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                           <div class="form-group">
+                              <label for="form_email">Email *</label>
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                  
+                           <div class="form-group">
+                              <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Your message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                           </div>
+                  
+                           <div class="form-group">
+                             
+                             <button type="submit" id="completed-task">
+                                <i class="fa fa-send"></i>
+                          </button>
+                             <br><br><p class="text-muted">
+                                <strong>*</strong> These fields are required.</p>
+                           </div>
+                  
+                         </div>
+                  
+                      </div>
+                  
+                  </div>
+                </form>
+                  
+            </main>
+       
+       </body>
+</html>
